@@ -1,0 +1,12 @@
+{
+  "docker": {
+    "container": {
+      "testmybot-fbmock": {
+        "env": {
+          "TESTMYBOT_FACEBOOK_WEBHOOKPORT": 5000,
+          "TESTMYBOT_FACEBOOK_WEBHOOKPATH": "webhook"
+        }
+      }
+	  }
+  }
+}
