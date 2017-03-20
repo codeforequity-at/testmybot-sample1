@@ -45,6 +45,16 @@ describe('TestMyBot Sample Conversation Test Suite', function() {
       throw new Error(err);
     });
   }, 10000);
+
+  bot.setupTestSuite(
+    (testcaseName, testcaseFunction) => {
+      it(testcaseName, testcaseFunction, 60000);
+    },
+    (response, tomatch) => {
+      expect(response).toMatch(tomatch);
+    },
+    (err) => fail(err)
+  );
   
   
 });
