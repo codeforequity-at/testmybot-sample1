@@ -1,14 +1,16 @@
 {
-  "name": "secretbots",
+  "name": "testmybot-sample1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Continuous Testing for your Chatbots - Sample Application 1",
   "main": "index.js",
   "scripts": {
     "start_testmybot": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testmybot_chat": "node node_modules/testmybot-chat/index.js",
+    "testmybot_ide": "node node_modules/testmybot-ide/ide.js",
+    "test": "jasmine"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Florian Treml",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
@@ -16,8 +18,9 @@
   },
   "devDependencies": {
     "jasmine": "^2.5.3",
-    "testmybot": "0.1.4",
-    "testmybot-fbmock": "0.1.4",
-    "testmybot-chat": "0.1.0"
+    "testmybot": "0.2.1",
+    "testmybot-fbmock": "0.2.1",
+    "testmybot-chat": "0.2.1",
+    "testmybot-ide": "0.2.1"
   }
 }

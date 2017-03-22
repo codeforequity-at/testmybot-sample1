@@ -51,7 +51,7 @@ describe('TestMyBot Sample Conversation Test Suite', function() {
       it(testcaseName, testcaseFunction, 60000);
     },
     (response, tomatch) => {
-      expect(response).toMatch(tomatch);
+      expect(response).toContain(tomatch);
     },
     (err) => fail(err)
   );
